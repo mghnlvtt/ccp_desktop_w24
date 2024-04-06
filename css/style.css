@@ -1,0 +1,467 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: floralwhite;
+    line-height: 1.5;
+    padding: 10px;
+
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* CSS FOR NAVIGATION BAR */
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e3e3e3;
+}
+
+li.navbar {
+    float: left;
+}
+
+ul.navbar a {
+    display: flex; 
+    align-items: center; 
+    color: #405d8e;
+    text-align: center;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+}
+
+ul.navbar a i {
+    margin-right: 5px;
+}
+
+ul.navbar a.active{
+    background-color: #c6c6c6;
+    font-weight: bolder;
+    color: #13274E;
+}
+
+ul.navbar a:hover{
+    background-color: #959fb0;
+}
+
+/* CSS FOR PET 'PORTRAITS' + DETAILS */
+
+img.portrait {
+    border: 10px solid rgb(237, 225, 208);
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.portrait, h3.portrait{
+    font-size: 200%;
+    background-color: #fcf3e1;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    margin: 10px auto; 
+}
+
+h3.likes {
+    font-size: 2em;
+    background-color: #fcf3e1;
+    width: 80%;
+    text-align: center;
+    margin: 10px auto; 
+    padding: 10px;
+}
+
+ul.likes {
+    text-align: center;
+}
+
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 40px;
+    row-gap: 10px;
+    padding: 0.9em;
+    justify-items: center; 
+}
+
+.pets-grid > img {
+    background-color: burlywood;
+    width: 100%; 
+    height: auto; 
+    padding: 1em;
+    align-items: center;
+}
+
+
+.item1 .item2{
+    grid-column: span 1; 
+    grid-row: span 1;
+}
+
+.item3 {
+    grid-column: span 2; 
+    grid-row: span 1;
+}
+
+/* CSS FOR INDEX.HTML */
+
+h1.homepage{
+    font-size: 2.5em;
+}
+h2.homepage{
+    font-size: 1.5em;
+}
+ul.homepage{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+/* CSS FOR RECIPES */
+
+img.recipes {
+    border: 10px solid rgb(237, 225, 208);
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.recipes {
+    font-size: 200%;
+    background-color: #fcf3e1;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto; 
+}
+h3.recipes {
+    font-size: 175%;
+    background-color: #fcf3e1;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto; 
+}
+ul.recipe_details {
+    text-align: left;
+    list-style-position: inside;
+}
+
+ul.recipe_steps {
+    text-align: left;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+ol.recipe_steps {
+    text-align: left;
+    list-style-type: lower-roman;
+    list-style-position: inside;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 40px;
+    row-gap: 10px;
+    padding: 0.9em;
+    justify-items: center; 
+}
+
+.recipes-grid > img {
+    border: 2px solid #fcf3e1;
+    width: 100%; 
+    height: auto; 
+    padding: 1em;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.item4 .item5{
+    grid-column: span 1; 
+    grid-row: span 1;
+}
+
+.item6 {
+    grid-column: span 2; 
+    grid-row: span 1;
+}
+
+/* CSS FOR TRAVEL */
+
+img.travel {
+    border: 10px solid rgb(237, 225, 208);
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.travel {
+    font-size: 120%;
+    background-color: #fcf3e1;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto; 
+}
+h3.travel {
+    font-size: 120%;
+    background-color:#fcf3e1;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto; 
+}
+ul.travel {
+    line-height: 1.5em;
+}
+
+.travel-main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 10px;
+    padding: 0.6em;
+    justify-items: center; 
+    align-items: center;
+}
+
+.travel-main-grid > img {
+    width: 100%; 
+    height: auto; 
+    padding: 1em;
+}
+
+
+.item7 .item8 {
+    grid-column: span 1; 
+    grid-row: span 1;
+}
+
+/* CSS TO HIDE SKIP TO MAIN */
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+
+@media only screen and (min-width: 768px) {
+    /* UPDATING HOMEPAGE LAYOUT */
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        column-gap: 40px;
+        row-gap: 10px;
+        padding: 0.9em;
+        justify-items: center; 
+    }
+    .pets_home{
+        grid-column: 1;
+        grid-row: 1;
+    } 
+    .pets_desc{
+        grid-column: 1;
+        grid-row: 2;
+    } 
+    .recipes_home{
+        grid-column: 2;
+        grid-row: 1;
+    } 
+    .recipes_desc{
+        grid-column: 2;
+        grid-row: 2;
+    } 
+    .travel_home{
+        grid-column: 3;
+        grid-row: 1;
+    } 
+    .travel_desc{
+        grid-column: 3;
+        grid-row: 2;
+    } 
+
+    .portrait-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap: 40px;
+        row-gap: 10px;
+        padding: 0.9em;
+        justify-items: center; 
+        align-items: center;
+    }
+    .picture{
+        grid-column: 1; 
+    }
+    .name{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .bio{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .gallery{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .likes{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .images {
+        flex: 1; 
+        margin-right: 20px; 
+    }
+    
+    .details {
+        flex: 1; 
+    }
+    
+    .images img{
+        border: 10px solid rgb(237, 225, 208);
+        max-width: 60%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15%;
+    }
+    .details h2,h3{
+        font-size: 160%;
+        background-color: #fcf3e1;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        margin: 10px auto; 
+    }
+
+    h2{
+        font-size: 160%;
+        background-color: #fcf3e1;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    img.portrait {
+        border: 10px solid rgb(237, 225, 208);
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1.portrait{
+        text-align: center;
+    }
+
+    h2.portrait, h3.portrait {
+        font-size: 150%;
+        background-color: #fcf3e1;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin: 1px auto; 
+    }
+
+    h3.portrait{
+        align-self: start;
+    }
+
+    h3.likes {
+        font-size: 150%;
+        background-color: #fcf3e1;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin: 1px auto;
+        align-self: start;
+    }
+    
+    ul.likes {
+        text-align: center;
+        font-size: 130%;
+    }
+    
+    .pets-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap: 40px;
+        row-gap: 10px;
+        padding: 0.9em;
+        justify-items: center; 
+    }
+    
+    .pets-grid > img {
+        border: 10px solid rgb(237, 225, 208);
+        width: 80%; 
+        height: auto; 
+        padding: 1em;
+        align-items: center;
+    }
+    
+    
+    .item1 .item2{
+        grid-column: span 1; 
+        grid-row: span 1;
+    }
+    
+    .item3 {
+        grid-column: span 2; 
+        grid-row: span 1;
+    }
+    .travel_pics{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap: 40px;
+        row-gap: 10px;
+        padding: 0.9em;
+        justify-items: center; 
+        align-items: center;
+    }
+    .travel_pics > img {
+        background-color:#959fb0;
+        width: 100%; 
+        height: auto; 
+        padding: em;
+        align-items: center;
+        margin-left: 20%;
+    }
+    
+    .travelimages{
+        grid-column: 1;
+    }
+    .captions{
+        grid-column:2;
+        margin-left:20%;
+    }
+
+
+@media (prefers-reduced-motion) {
+    .animation {
+      animation-duration: 0s;
+    }
+}
+}
