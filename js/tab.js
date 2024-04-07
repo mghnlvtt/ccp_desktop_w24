@@ -1,14 +1,13 @@
 function openSubject(subjectName, elmnt, color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
+    var tabcontent = document.querySelectorAll(".tabcontent");
+    tabcontent.forEach(function(tab){
+        tab.style.display = "none";
+    });
   
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
+    var tablinks = document.querySelectorAll(".tablink");
+    tablinks.forEach(function(link){
+        link.style.backgroundColor = "";
+    });
   
     document.getElementById(subjectName).style.display = "block";
   
