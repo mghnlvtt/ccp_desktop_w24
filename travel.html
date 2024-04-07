@@ -22,7 +22,12 @@
     </header>
     <main id="main">
         <h1 class="travel">Travel</h1>
-        <div>
+        <div class="tablink_flex">
+            <button class="tablink" onclick="openSubject('Costa', this, '#c6c6c6')" id="defaultOpen">Monte Verde, Costa Rica</button>
+            <button class="tablink" onclick="openSubject('Italy', this, '#c6c6c6')">Rome, Italy</button>
+            <button class="tablink" onclick="openSubject('LA', this, '#c6c6c6')">Los Angeles, California</button>
+        </div>
+        <div class='tabcontent' id="Costa">
             <h2 class="travel">Monteverde, Costa Rica</h2>
             <div class="travel-main-grid">
                 <img class = "animation item item8" src="images/Monteverde.gif" width = "400" alt="Gif of a ziplining person, a canoeing man and woman from behind, and a trail in Monteverde, Costa Rica">
@@ -45,7 +50,7 @@
                 <p class="travel_pics captions">El Tigre Waterfalls is made up of four falls, which are connected by trails and hanging bridges.</p>
             </div>
         </div>
-        <div>
+        <div class='tabcontent' id="Italy">
             <h2 class="travel">Rome, Italy</h2>
             <div class="travel-main-grid">
                 <img class = "animation item item8" src="images/colosseum-rome.gif" width = "400" alt="A view of the colosseum ruins at night.">
@@ -70,7 +75,7 @@
                 <p class="travel_pics captions">Victor Emmanuel II monument</p>
             </div>
         </div>
-        <div>
+        <div class='tabcontent' id="LA">
             <h2 class="travel">Los Angeles, California</h2>
             <div class="travel-main-grid">
                 <img class = "animation item item8" src="images/los-angeles-california-bustle.gif" width = "400" alt="Gif of palm trees in Los Angeles, California">
@@ -99,5 +104,6 @@
         <div></div>
         <div></div>
     </main>
+<script src="js/tab.js"></script>
 </body>
 </html>

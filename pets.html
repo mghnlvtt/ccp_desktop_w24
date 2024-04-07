@@ -24,27 +24,35 @@
     </header>
     <main id="main">
         <h1 class="portrait">Pets</h1>
-        <div class='portrait-grid'>
-        <img class="portrait picture" src="images/miumiu.jpg" width = "400" alt="Silver gradient British shorthair cat in a wedding dress">
-        <div class="portrait">
-            <h2 class="portrait name">Miumiu the Cat</h2>
-            <p class="portrait bio">Miumiu is a five-year-old silver gradient British shorthair cat. She was born in Russia and raised in the United States and China. She is a mom of two babies. She loves to sleep.</p> 
-            <p class="portrait bio">Miumiu is kind of timid and afraid to meet strangers. But she is very close to her family, she loves to lie next to her family. She is very talkative and loves to meow.</p>
+        <div class="tablink_flex">
+            <button class="tablink" onclick="openSubject('Miumiu', this, '#c6c6c6')" id="defaultOpen">Miumiu</button>
+            <button class="tablink" onclick="openSubject('Koda', this, '#c6c6c6')">Koda</button>
+            <button class="tablink" onclick="openSubject('Pluto', this, '#c6c6c6')">Pluto</button>
+            <button class="tablink" onclick="openSubject('Juno', this, '#c6c6c6')">Juno</button>
+            <button class="tablink" onclick="openSubject('Sage', this, '#c6c6c6')">Sage</button>
         </div>
-        <h3 class="portrait">Photo Gallery</h3>
-        <div class="pets-grid gallery">
-            <img class="item item1" src="images/miumiu_in_the_bag.jpeg" alt="Silver gradient British shorthair cat in a pink bag">
-            <img class="item item2" src="images/miumiu_on_the_bed.jpeg" alt="Silver gradient British shorthair cat lying on a bed">
-            <img class="item item3" src="images/miumiu_sleeping.jpeg" alt="Silver gradient British shorthair cat sleeping on a bed">
+        <div class='portrait-grid tabcontent' id="Miumiu">
+            <img class="portrait picture" src="images/miumiu.jpg" width = "400" alt="Silver gradient British shorthair cat in a wedding dress">
+            <div class="portrait">
+                <h2 class="portrait name">Miumiu the Cat</h2>
+                <p class="portrait bio">Miumiu is a five-year-old silver gradient British shorthair cat. She was born in Russia and raised in the United States and China. She is a mom of two babies. She loves to sleep.</p> 
+                <p class="portrait bio">Miumiu is kind of timid and afraid to meet strangers. But she is very close to her family, she loves to lie next to her family. She is very talkative and loves to meow.</p>
+            </div>
+            <h3 class="portrait">Photo Gallery</h3>
+            <div class="pets-grid gallery">
+                <img class="item item1" src="images/miumiu_in_the_bag.jpeg" alt="Silver gradient British shorthair cat in a pink bag">
+                <img class="item item2" src="images/miumiu_on_the_bed.jpeg" alt="Silver gradient British shorthair cat lying on a bed">
+                <img class="item item3" src="images/miumiu_sleeping.jpeg" alt="Silver gradient British shorthair cat sleeping on a bed">
+            </div>
+                <h3 class="likes">Likes</h3>
+                <ul class="likes">
+                    <li>Chicken breast</li>
+                    <li>Sleeping</li>
+                    <li>Observing birds outside the window</li>
+                </ul>
+            </div>
         </div>
-            <h3 class="likes">Likes</h3>
-            <ul class="likes">
-                <li>Chicken breast</li>
-                <li>Sleeping</li>
-                <li>Observing birds outside the window</li>
-            </ul>
-        </div>
-        <div class='portrait-grid'>
+        <div class='portrait-grid tabcontent' id="Koda">
             <img class="portrait picture" src="images/Koda.jpg" width = "400" alt="Golden retriever holding a teal dragon toy">
             <div class="portrait">
                 <h2 class="portrait name">Koda the Dog</h2>
@@ -64,7 +72,7 @@
                     <li>Stealing Socks</li>
                 </ul>
         </div>
-        <div class='portrait-grid'>
+        <div class='portrait-grid tabcontent' id="Pluto">
             <img class="portrait picture" src="images/pluto.jpg" width = "400" alt="White dog looking up.">
             <div class="portrait">
                 <h2 class="portrait name">Pluto the Dog</h2>
@@ -84,7 +92,7 @@
                     <li>His toy duck</li>
                 </ul>
         </div>
-        <div class='portrait-grid'>
+        <div class='portrait-grid tabcontent' id="Juno">
             <img class="portrait picture" src="images/classic_juno.JPG" width = "400" alt="Black and brown dog asleep on his side">
             <div class="portrait">
                 <h2 class="portrait name">Juno the Dog</h2>
@@ -105,7 +113,7 @@
                 </ul>
         </div>
 
-        <div class='portrait-grid'>
+        <div class='portrait-grid tabcontent' id="Sage">
             <img class="portrait picture" src="images/sage_classic.jpeg" width = "400" alt="A smiling golden retriever lying on the bed">
             <div class="portrait">
                 <h2 class="portrait name">Sage the Dog</h2>
@@ -131,6 +139,6 @@
         <div></div>
         <div></div>
     </main>
-    
+<script src="js/tab.js"></script>
 </body>
 </html>
