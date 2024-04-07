@@ -1,4 +1,4 @@
-function openSubject(subjectName, elmnt, color) {
+function openSubject(subjectName, element, color) {
     var tabcontent = document.querySelectorAll(".tabcontent");
     tabcontent.forEach(function(tab){
         tab.style.display = "none";
@@ -11,7 +11,7 @@ function openSubject(subjectName, elmnt, color) {
   
     document.getElementById(subjectName).style.display = "block";
   
-    elmnt.style.backgroundColor = color;
+    element.style.backgroundColor = color;
   }
   
   document.getElementById("defaultOpen").click();
